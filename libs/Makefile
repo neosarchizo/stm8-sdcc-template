@@ -7,6 +7,7 @@ LIBNAME=projectlib
 SOURCES=stm8s_gpio.c
 SOURCES+= stm8s_clk.c
 SOURCES+= stm8s_flash.c
+SOURCES+= delay.c
 
 RELS=$(SOURCES:.c=.rel)
 

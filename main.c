@@ -2,19 +2,21 @@
 #include <stm8s_clk.h>
 #include <stm8s_gpio.h>
 #include <stdint.h>
+#include <delay.h>
 
-#define LED_G_PORT GPIOC
-#define LED_G_PIN GPIO_PIN_3
+#define TEST_LED_PORT GPIOB
+#define TEST_LED_PIN GPIO_PIN_5
 
 int main()
 {
 	CLK_SYSCLKConfig(CLK_PRESCALER_CPUDIV1);
 	CLK_SYSCLKConfig(CLK_PRESCALER_HSIDIV1);
 
-	GPIO_Init(LED_G_PORT, LED_G_PIN, GPIO_MODE_OUT_PP_LOW_FAST);
-	GPIO_WriteHigh(LED_G_PORT, LED_G_PIN);
-
+	GPIO_Init(TEST_LED_PORT, TEST_LED_PIN, GPIO_MODE_OUT_PP_LOW_FAST);
+	
 	while (1)
 	{
+		GPIO_WriteReverse(TEST_LED_PORT, TEST_LED_PIN);
+		delay_ms(1000);
 	}
 }
