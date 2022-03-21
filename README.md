@@ -1,7 +1,13 @@
 # stm8s-sdcc-template
 [ST] STM8S sdcc template
 
+## Reference
+
+- [stm8s-sdcc-template](https://github.com/baoson2211/stm8s-sdcc-template)
+- [STM8 DEVELOPMENT WITH ECLIPSE AND MACOS](https://blog.nubix.de/index.php/2018/09/18/stm8-development-with-eclipse-and-macos/)
+
 ## Install
+
 
 ### sdcc
 
@@ -11,7 +17,6 @@ brew install sdcc
 
 ### stm8flash
 
-- [STM8 DEVELOPMENT WITH ECLIPSE AND MACOS](https://blog.nubix.de/index.php/2018/09/18/stm8-development-with-eclipse-and-macos/)
 - [stm8flash](https://github.com/vdudouyt/stm8flash)
 
 ```
