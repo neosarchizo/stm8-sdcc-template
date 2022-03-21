@@ -46,6 +46,9 @@ clean:
 flash: $(HEXFILE)
 	stm8flash -c$(DEBUGPROBE) -p$(PROCESSOR) -w $(HEXFILE)
 
+flash-unlock: $(HEXFILE)
+	stm8flash -c$(DEBUGPROBE) -p$(PROCESSOR) -w $(HEXFILE) -u
+
 %.ihx: %.c
 	$(SDCC) $(MACROS) $(PROCTYPE) $(CFLAGS) $(LDFLAGS) $< $(LIBFILE) -L $(LIBFILEPATH)
 
