@@ -1,7 +1,7 @@
-# stm8s-sdcc-template
-[ST] STM8S sdcc template
+# stm8-sdcc-template
+[ST] STM8 sdcc template
 
-## Reference
+## References
 
 - [stm8s-sdcc-template](https://github.com/baoson2211/stm8s-sdcc-template)
 - [STM8 DEVELOPMENT WITH ECLIPSE AND MACOS](https://blog.nubix.de/index.php/2018/09/18/stm8-development-with-eclipse-and-macos/)
